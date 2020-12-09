@@ -19,6 +19,7 @@ app.get('/', (request, response) => {
 });
 
 app.get('/usuarios', usuarioService.getUsuarios);
+app.post('/usuarios', usuarioService.addUsuario);
 
 app.listen(port, () => {
     console.log(`API corriendo en el puerto ${port}`)
